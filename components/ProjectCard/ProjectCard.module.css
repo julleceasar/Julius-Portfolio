@@ -1,0 +1,33 @@
+.productCard {
+  max-width: 800px;
+  border-bottom: 1px solid rgb(27, 27, 27, 0.2);
+}
+
+.productCardText {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.imgDiv {
+  width: 100%;
+}
+
+.imgStyle {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 20px solid #1b1b1b;
+  border-radius: 25px;
+  transition: transform 0.5s;
+
+}
+
+
+.imgStyle:hover {
+    transform: scale(1.025); 
+  }
+
+
+

@@ -1,0 +1,74 @@
+.navStyle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    background-color:   whitesmoke;
+    color: #1B1B1B;
+    border-bottom: 1px solid rgb(211, 211, 211, 0.5);
+    padding: 0 80px;
+    flex-wrap: wrap;
+    z-index: 999;
+}
+
+.navStyleMobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    overflow: hidden;
+    background-color:   whitesmoke;
+    color: #1B1B1B;
+    border-bottom: 1px solid lightgray;
+    padding: 0 40px;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+
+}
+
+.ulStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.liStyle {
+    opacity: 85%;
+    transition: text-decoration 0.3s;
+    text-decoration: solid underline transparent;
+    
+}
+
+.liStyle:hover {
+    opacity: 100%;
+    text-decoration: solid underline rgb(255, 165, 0, 0.6);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
+.liButton {
+    transition: background-color 0.3s;
+    border: 2px solid #1B1B1B;
+    padding: 5px 25px;
+    border-radius: 50px;
+    color: #1B1B1B;
+}
+
+
+.liButton:hover {
+    background-color: #1B1B1B;
+    color: rgb(254, 185, 57);
+}
+
+

@@ -1,0 +1,38 @@
+.formStyle {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 50px;
+    max-width: 600px;
+}
+
+.inputContainer{
+    display: flex;
+    width: 100%;
+    gap: 10PX;
+    flex-wrap: wrap;
+}
+
+.inputCol {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.inputStyle {
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #1B1B1B;
+    border-radius: 3px;
+}
+
+.messageInput {
+    border-radius: 3px;
+    width: 100%;
+    padding: 12px;
+    height: 200px;
+    font-size: 18px;
+    border: 2px solid #1B1B1B;
+
+}
