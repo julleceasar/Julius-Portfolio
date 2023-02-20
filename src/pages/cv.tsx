@@ -27,7 +27,7 @@ export default function CV() {
       <div className={s.timeline}>
         {jobs && jobs.map((job) => {
           return (
-            <TimelineCard job={job}/>
+            <TimelineCard key={job.name} job={job}/>
           )
         })}
         

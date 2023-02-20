@@ -52,7 +52,7 @@ export default function Home() {
           <h1 style={{ fontSize: "45px" }}>Projects</h1>
           {projects && projects.map((project) => {
             return (
-              <ProjectCard project={project} />
+              <ProjectCard key={project.name} project={project} />
             )
           })}
         </section>
