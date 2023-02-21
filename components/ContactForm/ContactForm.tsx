@@ -1,11 +1,13 @@
 import { useForm, ValidationError } from "@formspree/react";
 import s from "./ContactForm.module.css";
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import { useState } from "react";
 
 interface Props {}
 
 const ContactForm: React.FC<Props> = () => {
   const [state, handleSubmit] = useForm("mayzoodl");
+  
   if (state.succeeded) {
     return (
         <div style={{marginTop: '50px', display: 'flex', gap: '10px'}}>
@@ -14,6 +16,9 @@ const ContactForm: React.FC<Props> = () => {
         </div>
     )
   }
+
+
+
   return (
     <form className={s.formStyle} onSubmit={handleSubmit}>
       <div className={s.inputContainer}>

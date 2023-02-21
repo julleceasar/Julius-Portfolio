@@ -30,8 +30,9 @@ export default function Home() {
           <h1 style={{ fontSize: isMobile || isTablet ? '35px' : '50px' }}>Hello there amigo!👋 </h1>
           <h3>
             My name is Julius Djudjaku and I am soon to be a gratuated web
-            developer. I am currently a student at Medieinstitutet in gothenburg
-            where im studying fullstack web developer.{" "}
+            developer. I'm currently a student at Medieinstitutet in gothenburg
+            where im studying fullstack web developer. Right now Im doing my last internship at the gothenburg based e-commerce agency
+Wallmander & co.  {" "}
           </h3>
           <h3>
             My skills range from front end (html, css, javascript/ts, react) to
