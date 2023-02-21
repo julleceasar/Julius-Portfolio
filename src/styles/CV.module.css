@@ -18,8 +18,9 @@
 .cirkel {
   display: flex;
   position: relative;
-  height: 250px;
   color: #1B1B1B;
+  margin-top: 70px;
+  margin-bottom: 15px;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
@@ -27,7 +28,6 @@
 
 .cirkel h1 {
   font-size: 50px;
-  margin: 0px;
   padding: 0px;
 }
 

@@ -7,7 +7,7 @@ export interface Project {
 
 const projects = [
     {
-        name: 'QWERTY Keyboards - Ecommerce website',
+        name: 'QWERTY Keyboards',
         description: 'A e-commerce website selling custom keyboards and accessories that was our exam-project. Built with next.js, mongoose and stripe as payment. Deployed on vercel.',
         img: 'qwertyFixed.png',
         github: 'https://github.com/antoniowav/qwerty'
