@@ -16,11 +16,11 @@ export default function CV() {
       <div className={s.parent}>
         <div className={s.cirkel}>
           <h1>About me</h1>
-          <p style={{color: 'orange', fontSize: '100px', position: 'absolute', right: '-50px'}}>.</p>
+          <p style={{color: 'orange', fontSize: '50px', position: 'absolute', right: '-25px'}}>.</p>
         </div>
 
         <div className={s.rubrik}>
-          <h1>Timeline</h1>
+          <h2>Timeline</h2>
         </div>
       </div>
 

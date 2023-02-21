@@ -5,6 +5,8 @@ import julius from "../../public/julius.jpg";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import projects from "data/projects";
 import ProjectCard from "components/ProjectCard/ProjectCard";
+import GitHubIcon from "@mui/icons-material/GitHub";
+
 
 export default function Home() {
   const isMobile = useMediaQuery("(max-width:574px)");
@@ -25,7 +27,7 @@ export default function Home() {
             isTablet ? styles.helloContainerTabletMobile : styles.helloContainer
           }
         >
-          <h1 style={{ fontSize: isMobile || isTablet ? '35px' : '45px' }}>Hello there amigo!👋 </h1>
+          <h1 style={{ fontSize: isMobile || isTablet ? '35px' : '50px' }}>Hello there amigo!👋 </h1>
           <h3>
             My name is Julius Djudjaku and I am soon to be a gratuated web
             developer. I am currently a student at Medieinstitutet in gothenburg
@@ -49,7 +51,7 @@ export default function Home() {
 
       <div className={styles.projectsFullWidthContainer}>
         <section className={styles.projectsContainer}>
-          <h1 style={{ fontSize: "45px" }}>Projects</h1>
+          <h1 style={{ fontSize: "50px" }}>Projects</h1>
           {projects && projects.map((project) => {
             return (
               <ProjectCard key={project.name} project={project} />

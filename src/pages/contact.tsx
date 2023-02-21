@@ -2,7 +2,6 @@ import Head from "next/head";
 import ContactForm from "components/ContactForm/ContactForm";
 
 export default function Contact() {
-
   return (
     <>
       <Head>
@@ -11,11 +10,36 @@ export default function Contact() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div style={{ marginTop: "170px",marginBottom: '100px', width: '80%', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}}>
-        <h1>Want to get in touch ?</h1>
-        <br/>
-        <h3>Fill out the form and I will get back to you as soon as possible.</h3>
-      <ContactForm/>
+      <div
+        style={{
+          marginTop: "170px",
+          marginBottom: "100px",
+          width: "80%",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <div style={{position: 'relative'}}>
+          <h1 style={{fontSize: '50px'}}>Contact</h1>
+          <p
+            style={{
+              color: "orange",
+              fontSize: "50px",
+              position: "absolute",
+              right: "-25px",
+              top: '0'
+            }}
+          >
+            .
+          </p>
+        </div>
+        <br />
+        <h3>
+          Fill out the form and I will get back to you as soon as possible.
+        </h3>
+        <ContactForm />
       </div>
     </>
   );
