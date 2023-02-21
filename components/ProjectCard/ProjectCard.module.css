@@ -4,10 +4,13 @@
 }
 
 .productCardText {
-  padding: 20px;
+  display: flex;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 20px;
+  line-height: 25px;
+
 }
 
 .imgDiv {
@@ -21,13 +24,29 @@
   border: 20px solid #1b1b1b;
   border-radius: 25px;
   transition: transform 0.5s;
-
 }
 
+.btnContainer {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
 
-.imgStyle:hover {
-    transform: scale(1.025); 
-  }
+.buttonStyle {
+  transition: opacity 0.3s;
+  transition: transform 0.3s;
+  border: 2px solid #1b1b1b;
+  background-color: #1b1b1b;
+  padding: 3px 100px;
+  border-radius: 35px;
+  cursor: pointer;
+  color: #1b1b1b;
+}
 
-
-
+.buttonStyle:hover {
+  opacity: 85%;
+  transform: scale(1.015);
+}
