@@ -14,13 +14,13 @@ const projects = [
     },
     {
         name: 'Moviefinder API',
-        description: 'This a express server API presenting movie information. All movie data is coming from OMDb-api which is a open movie database. Built with vanilla javascript on frontend and node.js for the api.',
+        description: 'This is an express server API presenting movie information. All movie data is coming from OMDb-api which is a open movie database. Built with vanilla javascript on frontend and node.js for the api.',
         img: 'moviefinder.png',
         github: 'https://github.com/julleceasar/Movie-finder-API'
     },
     {
         name: 'Optical lenses',
-        description: 'This a express server API presenting movie information. All movie data is coming from OMDb-api which is a open movie database. Built with vanilla javascript on frontend and node.js for the api.',
+        description: 'A school project where the assignment was to create a e-commerce with a checkout and a adminpage for CRUD. Made with react and written in Typescript, MUI (material UI) was used as the designsystem for the most part. ',
         img: 'optical.png',
         github: 'https://github.com/DWMi/React-Store'
     },

@@ -26,7 +26,7 @@ const ProjectCard: React.FC<Props> = ({ project }) => {
       </div>
       <div className={s.productCardText}>
         <h1 style={{ fontSize: isMobile ? '26px' : '30px', color: 'orange', textAlign: 'center' }}>{project.name}</h1>
-        <h4>{project.description}</h4>
+        <h4 style={{textAlign: 'center'}}>{project.description}</h4>
         <div className={s.btnContainer}>
           <Link target={'_blank'} href={`${project.github}` }>
             <button className={s.buttonStyle}>

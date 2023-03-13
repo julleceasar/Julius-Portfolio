@@ -21,21 +21,23 @@ export default function Contact() {
           alignItems: "center",
         }}
       >
-        <div style={{position: 'relative'}}>
-          <h1 style={{fontSize: '50px'}}>Contact</h1>
+        <div style={{ position: "relative" }}>
+          <h1 style={{ fontSize: "50px" }}>Contact</h1>
           <p
             style={{
               color: "orange",
               fontSize: "50px",
               position: "absolute",
               right: "-25px",
-              top: '0'
+              top: "0",
             }}
           >
             .
           </p>
         </div>
         <br />
+        <h3>Want to get to know me better or just have a question in general ?</h3>
+        <br/>
         <h3>
           Fill out the form and I will get back to you as soon as possible.
         </h3>

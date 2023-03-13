@@ -75,12 +75,12 @@ const HamburgerDrawer: React.FC<Props> = () => {
           </ListItem>
         </Link>
         <Divider />
-        <Link href={"/cv"}>
+        <Link href={"/#projects"}>
           <ListItem>
             <ListItemIcon>
               <InfoIcon />
             </ListItemIcon>
-            <p style={{ fontWeight: "bold" }}>About</p>
+            <p style={{ fontWeight: "bold" }}>Projects</p>
           </ListItem>
         </Link>
         <Divider />
