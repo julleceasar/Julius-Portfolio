@@ -42,7 +42,7 @@ const Navbar: React.FC<Props> = () => {
           <Link href={"/contact"}>
             <li className={s.liStyle}>CONTACT</li>
           </Link>
-          <a href="/juliusCV.pdf" target={"blank"}>
+          <a href="/julius_cv_short.pdf" target={"blank"}>
             <li className={s.liButton}>RESUME</li>
           </a>
         </ul>
