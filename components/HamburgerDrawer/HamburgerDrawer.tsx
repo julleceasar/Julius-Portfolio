@@ -92,7 +92,7 @@ const HamburgerDrawer: React.FC<Props> = () => {
           <p style={{ fontWeight: "bold" }}>Contact</p>
         </ListItem>
         </Link>
-        <Link href={'/juliusCV.pdf'} target='_blank'>
+        <Link href={'/julius_cv_short.pdf'} target='_blank'>
         <ListItem>
           <ListItemIcon>
             <WorkHistoryIcon />
