@@ -42,8 +42,8 @@ Wallmander & co.  {" "}
         <Image
           src={julius}
           alt={"julius"}
-          width={250}
-          height={250}
+          width={300}
+          height={300}
           style={{ borderRadius: "50%", border: "1px solid #1B1B1B" }}
         />
       </section>
