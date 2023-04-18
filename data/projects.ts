@@ -19,7 +19,7 @@ const projects = [
         github: 'https://github.com/julleceasar/Movie-finder-API'
     },
     {
-        name: 'Optical lenses',
+        name: 'Optical Trends',
         description: 'A school project where the assignment was to create a e-commerce with a checkout and a adminpage for CRUD. Made with react and written in Typescript, MUI (material UI) was used as the designsystem for the most part. ',
         img: 'optical.png',
         github: 'https://github.com/DWMi/React-Store'
