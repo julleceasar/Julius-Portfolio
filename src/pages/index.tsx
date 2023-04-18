@@ -6,11 +6,65 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import projects from "data/projects";
 import ProjectCard from "components/ProjectCard/ProjectCard";
 import GitHubIcon from "@mui/icons-material/GitHub";
-
+import { motion, useScroll } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const isMobile = useMediaQuery("(max-width:574px)");
   const isTablet = useMediaQuery("(max-width:875px)");
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
+
+  if (loading) {
+    return (
+      <div
+        style={{
+          width: "100%",
+          height: "100vh",
+          backgroundColor: "whitesmoke",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          zIndex: "9999",
+        }}
+      >
+        <motion.div
+          style={{ display: "flex" }}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            stiffness: 50,
+            ease: "linear",
+            duration: 0.5,
+          }}
+        >
+          <h1 style={{ fontSize: "78px" }}>J|D</h1>
+        </motion.div>
+
+        <motion.div
+          style={{ display: "flex" }}
+          initial={{ opacity: 0, scale: 0.5, x: 500 }}
+          animate={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{
+            stiffness: 50,
+            ease: "linear",
+            duration: 0.7,
+            delay: 0.5,
+          }}
+        >
+          <h1 style={{ color: "orange", fontWeight: "bold", fontSize: "78px" }}>
+            .
+          </h1>
+        </motion.div>
+      </div>
+    );
+  }
   return (
     <>
       <Head>
@@ -19,24 +73,38 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/JD.png" />
       </Head>
-      <section
-        className={isTablet || isMobile ? styles.introMobileTablet : styles.introFullScreen}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5, x: -500 }}
+        animate={{ opacity: 1, scale: 1, x: 0 }}
+        transition={{
+          stiffness: 200,
+          ease: "easeIn",
+          duration: 0.6,
+        }}
+        className={
+          isTablet || isMobile
+            ? styles.introMobileTablet
+            : styles.introFullScreen
+        }
       >
         <div
           className={
             isTablet ? styles.helloContainerTabletMobile : styles.helloContainer
           }
         >
-          <h1 style={{ fontSize: isMobile || isTablet ? '35px' : '50px' }}>Hello there!👋</h1>
+          <h1 style={{ fontSize: isMobile || isTablet ? "35px" : "50px" }}>
+            Hello there!👋
+          </h1>
           <h3>
             My name is Julius Djudjaku and I am soon to be a gratuated web
             developer. I'm currently a student at Medieinstitutet in gothenburg
-            where im studying fullstack web developer. Right now Im doing my last internship at the gothenburg based e-commerce agency
-Wallmander & co.  {" "}
+            where im studying fullstack web developer. Right now Im doing my
+            last internship at the gothenburg based e-commerce agency Wallmander
+            & co.{" "}
           </h3>
           <h3>
-            My skills range from front end (html, css, javascript/ts, react & next.js) to
-            basic knowledge in back-end (php, node.js, MYSQL).
+            My skills range from front end (html, css, javascript/ts, react &
+            next.js) to basic knowledge in back-end (php, node.js, MYSQL).
           </h3>
         </div>
         <Image
@@ -46,19 +114,27 @@ Wallmander & co.  {" "}
           height={300}
           style={{ borderRadius: "50%", border: "1px solid #1B1B1B" }}
         />
-      </section>
+      </motion.div>
 
       {/* /* PROJECS SECTION */}
 
       <div id="projects" className={styles.projectsFullWidthContainer}>
-        <section className={styles.projectsContainer}>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{
+            stiffness: 50,
+            ease: "linear",
+            duration: 0.5,
+          }}
+          className={styles.projectsContainer}
+        >
           <h1 style={{ fontSize: "50px" }}>Projects</h1>
-          {projects && projects.map((project) => {
-            return (
-              <ProjectCard key={project.name} project={project} />
-            )
-          })}
-        </section>
+          {projects &&
+            projects.map((project) => {
+              return <ProjectCard key={project.name} project={project} />;
+            })}
+        </motion.div>
       </div>
     </>
   );
