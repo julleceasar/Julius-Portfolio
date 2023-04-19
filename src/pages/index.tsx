@@ -8,8 +8,10 @@ import ProjectCard from "components/ProjectCard/ProjectCard";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { motion, useScroll } from "framer-motion";
 import { useEffect, useState } from "react";
+import { Router, useRouter } from "next/router";
 
 export default function Home() {
+  const router = useRouter();
   const isMobile = useMediaQuery("(max-width:574px)");
   const isTablet = useMediaQuery("(max-width:875px)");
   const [loading, setLoading] = useState(false);
@@ -21,7 +23,9 @@ export default function Home() {
     }, 3000);
   }, []);
 
-  if (loading) {
+  console.log(router)
+
+  if (loading && router.asPath == '/') {
     return (
       <div
         style={{
