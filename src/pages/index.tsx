@@ -41,7 +41,7 @@ export default function Home() {
           transition={{
             stiffness: 50,
             ease: "linear",
-            duration: 0.5,
+            duration: 0.7,
           }}
         >
           <h1 style={{ fontSize: "78px" }}>J|D</h1>
@@ -54,7 +54,7 @@ export default function Home() {
           transition={{
             stiffness: 50,
             ease: "linear",
-            duration: 0.7,
+            duration: 0.8,
             delay: 0.5,
           }}
         >
@@ -74,13 +74,13 @@ export default function Home() {
         <link rel="icon" href="/JD.png" />
       </Head>
       <motion.div
-        initial={{ opacity: 0, scale: 0.5, x: -500 }}
-        animate={{ opacity: 1, scale: 1, x: 0 }}
-        transition={{
-          stiffness: 200,
-          ease: "easeIn",
-          duration: 0.6,
-        }}
+         initial={{ opacity: 0 }}
+         whileInView={{ opacity: 1 }}
+         transition={{
+           stiffness: 50,
+           ease: "linear",
+           duration: 1,
+         }}
         className={
           isTablet || isMobile
             ? styles.introMobileTablet
