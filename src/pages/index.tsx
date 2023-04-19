@@ -20,7 +20,7 @@ export default function Home() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 2500);
   }, []);
 
   console.log(router)
@@ -38,6 +38,7 @@ export default function Home() {
           zIndex: "9999",
         }}
       >
+        <div style={{position: 'relative', display: 'flex'}}>
         <motion.div
           style={{ display: "flex" }}
           initial={{ opacity: 0, scale: 0.5 }}
@@ -62,10 +63,11 @@ export default function Home() {
             delay: 0.5,
           }}
         >
-          <h1 style={{ color: "orange", fontWeight: "bold", fontSize: "78px" }}>
+          <h1 style={{ color: "orange", fontWeight: "bold", fontSize: "78px", position: 'absolute', top: '0', right: -40 }}>
             .
           </h1>
         </motion.div>
+        </div>
       </div>
     );
   }
