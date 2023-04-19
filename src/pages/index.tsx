@@ -79,7 +79,7 @@ export default function Home() {
          transition={{
            stiffness: 50,
            ease: "linear",
-           duration: 1,
+           duration: 0.5,
          }}
         className={
           isTablet || isMobile
